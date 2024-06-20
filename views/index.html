@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zidio Development Feedback Form</title>
+    <style>
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/02/90/89/76/240_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 100px auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ff8a00;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zidio Development Feedback Form</h1>
+    <form action="/submit-feedback" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="feedback">Describe Your Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
